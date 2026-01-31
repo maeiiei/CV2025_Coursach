@@ -85,7 +85,7 @@ int main() {
 	std::cout << "Current auto exposure mode: " << cap.get(cv::CAP_PROP_AUTO_EXPOSURE) << std::endl;
 	//const int cap_len(320), cap_height(240);
 	//std::cout << cap.get(cv::CAP_PROP_FRAME_WIDTH);
-// Проверяем, удалось ли открыть
+// Проверяем, удалось ли открыть камеру:
 	if (!cap.isOpened()) {
 		std::cerr << "Failed to open camera!" << std::endl;
 		return -1;
